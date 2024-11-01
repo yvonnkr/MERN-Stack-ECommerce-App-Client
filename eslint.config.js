@@ -34,7 +34,9 @@ export default [
                 {allowConstantExport: true},
             ],
 
-            "no-unused-vars": ["warn", {"varsIgnorePattern": "^_"}]
+            "no-unused-vars": ["warn", {"varsIgnorePattern": "^_"}],
+            "no-undef": "warn",
+            "react/prop-types": "warn"
         },
     },
 ]
