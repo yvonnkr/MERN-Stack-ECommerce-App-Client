@@ -1,4 +1,5 @@
 import './App.css'
+import {Button} from "@/components/ui/button.jsx";
 
 function App() {
 
@@ -6,6 +7,7 @@ function App() {
     return (
         <>
             <p>E-Commerce-App</p>
+            <Button>Test Button </Button>
         </>
     )
 }
