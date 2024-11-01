@@ -36,7 +36,8 @@ export default [
 
             "no-unused-vars": ["warn", {"varsIgnorePattern": "^_"}],
             "no-undef": "warn",
-            "react/prop-types": "warn"
+            "react/prop-types": "off",
+            "react/no-unescaped-entities": "off",
         },
     },
 ]
