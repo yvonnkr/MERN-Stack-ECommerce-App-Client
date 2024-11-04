@@ -17,7 +17,7 @@ import CheckAuth from "@/components/common/check-auth.jsx";
 import UnAuthPage from "@/pages/unauth-page/index.jsx";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
-import {checkAuth, logoutUser} from "@/store/auth-slice/index.js";
+import {checkAuth} from "@/store/auth-slice/index.js";
 import Loader from "@/components/common/Loader.jsx";
 
 function App() {
@@ -36,7 +36,6 @@ function App() {
 
     return (
         <div className="flex flex-col overflow-hidden bg-white">
-            <h1 onClick={() => dispatch(logoutUser())}>Header Component - Click to logout</h1>
 
             <Routes>
                 <Route path="/"
