@@ -1,8 +1,9 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 import axios from "axios";
+import {API_BASE_URL} from "@/helper/index.js"
 
 
-const API_BASE_URL = import.meta.env.VITE_API_URL;
+// const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 export const registerUser = createAsyncThunk("/auth/register", async (formData) => {
     const response = await axios.post(
